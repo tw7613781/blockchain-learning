@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  blockchain-learning:
+    image: ghcr.io/tw7613781/blockchain-learning:${VERSION:-latest}
+    container_name: blockchain-learning
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    networks:
+      - web
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    labels:
+      - "com.docker.compose.project=blockchain-learning"
+
+networks:
+  web:
+    name: blockchain-learning-network
