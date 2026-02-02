@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   blockchain-learning:
     image: ghcr.io/tw7613781/blockchain-learning:${VERSION:-latest}
