@@ -16,6 +16,13 @@ This project provides interactive visualizations for understanding blockchain in
 - **Memory Basics**: Memory structure, type storage, and assembly operations
 - **DomainUtils Case Study**: Gas optimization through assembly (77% savings)
 
+### Solana Architecture (NEW! 🎉)
+- **Account Model**: Understand Solana's revolutionary account-based storage
+- **PDA Calculator**: Interactive Program Derived Address generation
+- **EVM vs Solana**: Side-by-side comparison using real atomic swap contracts
+
+> All Solana content is based on real production code from the [Otmoic](https://github.com/otmoic) atomic swap bridge project.
+
 ## Tech Stack
 
 - Vue 3 + TypeScript

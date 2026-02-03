@@ -29,6 +29,21 @@ const router = createRouter({
       name: 'domainutils',
       component: () => import('../views/DomainUtilsView.vue'),
     },
+    {
+      path: '/solana/account-model',
+      name: 'solana-account-model',
+      component: () => import('../views/solana/SolanaAccountModelView.vue'),
+    },
+    {
+      path: '/solana/pda-seeds',
+      name: 'solana-pda',
+      component: () => import('../views/solana/SolanaPDAView.vue'),
+    },
+    {
+      path: '/solana/evm-comparison',
+      name: 'solana-evm-comparison',
+      component: () => import('../views/solana/SolanaEvmComparisonView.vue'),
+    },
   ],
 })
 

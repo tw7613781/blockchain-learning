@@ -65,7 +65,7 @@
 
           <!-- Description -->
           <p class="text-gray-500 max-w-2xl mx-auto mb-12">
-            From EVM internals to Solana architecture, from security patterns to DeFi mathematics.
+            From EVM internals to Solana's account model, from storage patterns to cross-chain bridges.
             Learn through interactive visualizations and real-world case studies.
           </p>
 
@@ -91,6 +91,12 @@
           </span>
           <span class="px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 rounded-full text-sm">
             Interactive Learning
+          </span>
+          <span class="px-4 py-2 bg-purple-500/10 border border-purple-500/30 text-purple-400 rounded-full text-sm">
+            Solana Account Model
+          </span>
+          <span class="px-4 py-2 bg-pink-500/10 border border-pink-500/30 text-pink-400 rounded-full text-sm">
+            Cross-Chain Bridges
           </span>
         </div>
       </div>
@@ -175,6 +181,95 @@
                 >
                   <div class="text-sm font-semibold text-white">DomainUtils Case Study</div>
                   <div class="text-xs text-gray-400">77% gas savings with assembly</div>
+                </router-link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solana Track -->
+      <div class="mb-16">
+        <div class="flex items-center mb-6">
+          <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mr-4">
+            <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-white">Solana Virtual Machine (SVM)</h3>
+            <p class="text-gray-400 text-sm">Master Solana's account model, PDAs, and parallel execution</p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Account Model -->
+          <div class="card group hover:scale-105 transition-transform duration-300">
+            <div class="card-header">
+              <div class="flex items-center justify-between">
+                <h4 class="text-xl font-bold text-white">🏦 Account Model</h4>
+                <span class="text-xs text-gray-500">1 module</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="text-gray-400 mb-4">
+                Understand Solana's revolutionary account-based architecture and how it differs from EVM
+              </p>
+              <div class="space-y-2">
+                <router-link 
+                  to="/solana/account-model"
+                  class="block p-3 bg-gray-800 rounded hover:bg-gray-700 transition-colors"
+                >
+                  <div class="text-sm font-semibold text-white">Solana Account Model</div>
+                  <div class="text-xs text-gray-400">Everything is an account</div>
+                </router-link>
+              </div>
+            </div>
+          </div>
+
+          <!-- PDA & Seeds -->
+          <div class="card group hover:scale-105 transition-transform duration-300">
+            <div class="card-header">
+              <div class="flex items-center justify-between">
+                <h4 class="text-xl font-bold text-white">🔑 PDA & Seeds</h4>
+                <span class="text-xs text-gray-500">1 module</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="text-gray-400 mb-4">
+                Learn Program Derived Addresses and how to deterministically generate account addresses
+              </p>
+              <div class="space-y-2">
+                <router-link 
+                  to="/solana/pda-seeds"
+                  class="block p-3 bg-gray-800 rounded hover:bg-gray-700 transition-colors"
+                >
+                  <div class="text-sm font-semibold text-white">PDA Calculator</div>
+                  <div class="text-xs text-gray-400">Interactive PDA generation</div>
+                </router-link>
+              </div>
+            </div>
+          </div>
+
+          <!-- EVM vs Solana -->
+          <div class="card group hover:scale-105 transition-transform duration-300">
+            <div class="card-header">
+              <div class="flex items-center justify-between">
+                <h4 class="text-xl font-bold text-white">⚡ EVM vs Solana</h4>
+                <span class="text-xs text-gray-500">1 module</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="text-gray-400 mb-4">
+                Side-by-side comparison using real atomic swap bridge contracts from both ecosystems
+              </p>
+              <div class="space-y-2">
+                <router-link 
+                  to="/solana/evm-comparison"
+                  class="block p-3 bg-gray-800 rounded hover:bg-gray-700 transition-colors"
+                >
+                  <div class="text-sm font-semibold text-white">Full Comparison</div>
+                  <div class="text-xs text-gray-400">Otmoic bridge case study</div>
                 </router-link>
               </div>
             </div>

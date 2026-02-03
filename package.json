@@ -14,26 +14,27 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "pinia": "^3.0.4",
-    "vue": "^3.5.27",
-    "vue-router": "^5.0.1",
+    "@noble/hashes": "^2.0.1",
+    "ethers": "^6.13.0",
     "gsap": "^3.12.5",
+    "pinia": "^3.0.4",
     "shiki": "^1.27.0",
-    "ethers": "^6.13.0"
+    "vue": "^3.5.27",
+    "vue-router": "^5.0.1"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.4",
     "@types/node": "^24.10.9",
     "@vitejs/plugin-vue": "^6.0.3",
     "@vue/tsconfig": "^0.8.1",
+    "autoprefixer": "^10.4.20",
     "npm-run-all2": "^8.0.4",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
     "typescript": "~5.9.3",
     "vite": "^7.3.1",
     "vite-plugin-vue-devtools": "^8.0.5",
-    "vue-tsc": "^3.2.4",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17"
+    "vue-tsc": "^3.2.4"
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
