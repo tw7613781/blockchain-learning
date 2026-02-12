@@ -59,6 +59,16 @@ const router = createRouter({
       name: 'solana-evm-comparison',
       component: () => import('../views/solana/SolanaEvmComparisonView.vue'),
     },
+    {
+      path: '/evm/tag-abi-encoding',
+      name: 'tag-abi-encoding',
+      component: () => import('../views/TagAbiEncodingView.vue'),
+    },
+    {
+      path: '/math/staking-rewards',
+      name: 'staking-rewards',
+      component: () => import('../views/StakingRewardsView.vue'),
+    },
   ],
 })
 

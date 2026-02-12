@@ -123,7 +123,7 @@
           </div>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Storage Track -->
           <div class="card group hover:scale-105 transition-transform duration-300">
             <div class="card-header">
@@ -181,6 +181,30 @@
                 >
                   <div class="text-sm font-semibold text-white">DomainUtils Case Study</div>
                   <div class="text-xs text-gray-400">77% gas savings with assembly</div>
+                </router-link>
+              </div>
+            </div>
+          </div>
+
+          <!-- ABI Encoding Track -->
+          <div class="card group hover:scale-105 transition-transform duration-300">
+            <div class="card-header">
+              <div class="flex items-center justify-between">
+                <h4 class="text-xl font-bold text-white">🔐 ABI Encoding</h4>
+                <span class="text-xs text-gray-500 bg-green-500/20 px-2 py-1 rounded">NEW</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="text-gray-400 mb-4">
+                Learn Olares Tag system's clever compact encoding and event-based storage architecture
+              </p>
+              <div class="space-y-2">
+                <router-link 
+                  to="/evm/tag-abi-encoding"
+                  class="block p-3 bg-gray-800 rounded hover:bg-gray-700 transition-colors"
+                >
+                  <div class="text-sm font-semibold text-white">Tag ABI Encoding System</div>
+                  <div class="text-xs text-gray-400">90% gas savings vs full ABI strings</div>
                 </router-link>
               </div>
             </div>
@@ -346,6 +370,62 @@
                   <div class="text-xs text-gray-400">Otmoic bridge case study</div>
                 </router-link>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Math & Algorithms Track -->
+      <div class="mb-16">
+        <div class="flex items-center mb-6">
+          <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4">
+            <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-white">DeFi Math & Algorithms (数学)</h3>
+            <p class="text-gray-400 text-sm">Master the mathematical models and algorithms behind DeFi protocols</p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Staking Rewards -->
+          <div class="card group hover:scale-105 transition-transform duration-300">
+            <div class="card-header">
+              <div class="flex items-center justify-between">
+                <h4 class="text-xl font-bold text-white">💰 Staking Rewards</h4>
+                <span class="text-xs text-gray-500 bg-green-500/20 px-2 py-1 rounded">NEW</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="text-gray-400 mb-4">
+                Learn Synthetix's elegant StakingRewards model - the most widely used staking rewards distribution algorithm in DeFi
+              </p>
+              <div class="space-y-2">
+                <router-link 
+                  to="/math/staking-rewards"
+                  class="block p-3 bg-gray-800 rounded hover:bg-gray-700 transition-colors"
+                >
+                  <div class="text-sm font-semibold text-white">Synthetix StakingRewards Model</div>
+                  <div class="text-xs text-gray-400">O(1) complexity, time-weighted rewards</div>
+                </router-link>
+              </div>
+            </div>
+          </div>
+
+          <!-- More coming soon -->
+          <div class="card opacity-50">
+            <div class="card-header">
+              <div class="flex items-center justify-between">
+                <h4 class="text-xl font-bold text-white">📊 More Coming Soon</h4>
+                <span class="text-xs text-gray-500">TBA</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="text-gray-400 mb-4">
+                Future modules: AMM pricing curves, liquidation algorithms, oracle mechanisms...
+              </p>
             </div>
           </div>
         </div>

@@ -16,12 +16,29 @@ This project provides interactive visualizations for understanding blockchain in
 - **Memory Basics**: Memory structure, type storage, and assembly operations
 - **DomainUtils Case Study**: Gas optimization through assembly (77% savings)
 
-### Solana Architecture (NEW! 🎉)
+### EVM ABI Encoding
+- **Tag ABI Encoding System**: Deep dive into Olares DID's compact encoding architecture
+  - Why custom encoding? (70-90% gas savings vs full ABI strings)
+  - Compact type byte encoding rules (Tag.sol)
+  - Tuple field name flattening (tree → 2D array pre-order traversal)
+  - Event-based storage architecture (on-chain hashes + off-chain field names)
+  - SDK decoding process (reconstructing human-readable data)
+
+### Solana Architecture
 - **Account Model**: Understand Solana's revolutionary account-based storage
 - **PDA Calculator**: Interactive Program Derived Address generation
+- **Anchor Framework**: Deep dive into the most popular Solana dev framework
+- **Cross-Program Invocation (CPI)**: Learn program composability patterns
 - **EVM vs Solana**: Side-by-side comparison using real atomic swap contracts
 
-> All Solana content is based on real production code from the [Otmoic](https://github.com/otmoic) atomic swap bridge project.
+
+### DeFi Math & Algorithms (NEW! 🎉)
+- **Synthetix StakingRewards Model**: The most elegant and widely-used staking rewards distribution algorithm
+  - The problem: How to distribute rewards fairly with O(1) complexity?
+  - Mathematical principles: rewardPerToken and time-weighted calculations
+  - Interactive simulation: Watch 小明 and 小红 stake, withdraw, and earn rewards in real-time
+  - Production code: Used by Uniswap V2, Sushiswap, Curve, and hundreds of DeFi protocols
+
 
 ## Tech Stack
 
